@@ -1,0 +1,48 @@
+@media only screen and (max-width: 900px){
+    
+    .navbar {
+        position: relative;
+        padding: 10px;
+    }
+    
+    .navbar .menubar {
+        display: block;
+        grid-column: 8 / 9;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    
+    .navbar .menu {
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: #edcc54a1;
+        margin-top: 25.5em;
+        transition: all 1.3s;
+        transform: translateX(277%);
+        
+    }
+    
+    .navbar .menu-toggle {
+        display: grid;
+        transform: translateX(76%);
+        border-radius: 8px 0px 0px 8px;
+    }
+    
+}
+
+/* Main Footer */
+
+.footer .listenOnline{
+    font-size: 8px;
+}
+
+.footer .followMe{
+    display: none;
+}
+
+.footer .socialNetwork{
+    margin-left: 3em;
+}

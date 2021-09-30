@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #EDCB54;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar .logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    grid-column: 2 / 3;
+}
+
+.navbar .menu{
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li{
+    list-style: none;
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    color: #181818;
+    cursor: pointer;
+}
+
+.navbar .menu a:hover{
+    text-decoration: overline 3px rgba(18, 18, 18, 0.7);
+
+}
+
+.navbar .menubar{
+    display: none;
+}
+
+/* Reproductor */
+
+.main{
+    background-image: linear-gradient(rgba(16, 16, 16, .9), rgba(16, 16, 16, .9)), url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+.main .title{
+    box-shadow: 9px 9px 16px rgb(18, 18, 18), -9px -9px 16px rgba(255, 255, 255, 0.352);
+    border-radius: 2em;
+    text-align: center;
+    padding: 10px;
+    color: #FFF;
+}
+
+.main .title h3{
+    font-weight: 300;
+}
+
+.main .title h1{
+    font-weight: 500;
+}
+
+/* Section footer */
+
+.footer{
+    display: grid;
+    height: 60px;
+    align-items: center;
+    background-color: #181818;
+    color: #FFF;
+    grid-template-areas: "listenOnline followMe socialNetwork";
+}
+
+.footer .listenOnline{
+    grid-area: listenOnline;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    background-color: #EDCB54;
+    color: #181818;
+}
+
+.footer .listenOnline .fas{
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.footer .followMe {
+    grid-area: followMe;
+    text-align: center;
+    color: #EDCB54;
+}
+
+.footer .socialNetwork{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .socialNetwork .fab{
+    font-size: 2em;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #EDCB54;
+}
+
+.footer .socialNetwork .fa-facebook-f{
+    color: blue;
+}
+
+.footer .socialNetwork .fa-instagram{
+    color: fuchsia;
+}
+
+.footer .socialNetwork .fa-whatsapp{
+    color: green;
+}
+
+.footer .listenOnline{
+    font-size: 8px;
+}
+
+.footer .followMe{
+    display: none;
+}
+
+.footer .socialNetwork{
+    margin-left: 3em;
+}

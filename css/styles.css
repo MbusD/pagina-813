@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #EDCB54;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar .logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    grid-column: 2 / 3;
+}
+
+.navbar .menu{
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li{
+    list-style: none;
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    color: #181818;
+    cursor: pointer;
+}
+
+.navbar .menu a:hover{
+    text-decoration: overline 3px rgba(18, 18, 18, 0.7);
+
+}
+
+.navbar .menubar{
+    display: none;
+}
+
+
+/* Section Main */
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(16, 16, 16, .9), rgba(16, 16, 16, .5)), url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.hero .infocontent {
+    grid-column: 2 / 5;
+    grid-row: 2 / 6;
+    color: #FFF;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.50);
+}
+
+.hero .infocontent h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1,5em;
+    font-weight: 400;
+}
+
+.hero .infocontent h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    font-weight: 600;
+    color: #EDCB54;
+}
+
+.hero .infocontent p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+}
+
+.hero .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #EDCB54;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.hero .btn:hover {
+    background-color: #EDCB54;
+    color: #181818;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all 1s;
+}
+
+.hero .navhero {
+    text-align: center;
+    color: #FFF;
+    grid-column: 7 / 11;
+    grid-row: 3 / 6;
+}
+
+.hero .navhero h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1,5em;
+    font-weight: 400;
+}
+
+.hero .navhero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    font-weight: 600;
+    color: #EDCB54;
+}
+
+.hero .navhero .btn2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #EDCB54;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.hero .navhero .btn2:hover {
+    color: #181818;
+    background-color: #EDCB54;
+    font-weight: 600;
+    transition: all 1s;
+}
+
+/* Section Footer */
+
+.footer{
+    display: grid;
+    height: 60px;
+    align-items: center;
+    background-color: #181818;
+    color: #FFF;
+    grid-template-areas: "listenOnline followMe socialNetwork";
+}
+
+.footer .listenOnline{
+    grid-area: listenOnline;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    background-color: #EDCB54;
+    color: #181818;
+}
+
+.footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .listenOnline .fas{
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.footer .followMe {
+    grid-area: followMe;
+    text-align: center;
+    color: #EDCB54;
+}
+
+.footer .socialNetwork{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .socialNetwork .fab{
+    font-size: 2em;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #EDCB54;
+}
+
+.footer .socialNetwork .fa-facebook-f{
+    color: blue;
+}
+
+.footer .socialNetwork .fa-instagram{
+    color: fuchsia;
+}
+
+.footer .socialNetwork .fa-whatsapp{
+    color: green;
+}
+
+.footer .listenOnline{
+    font-size: 8px;
+}
+
+.footer .followMe{
+    display: none;
+}
+
+.footer .socialNetwork{
+    margin-left: 3em;
+}

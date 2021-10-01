@@ -27,15 +27,19 @@
         display: grid;
         align-items: center;
         background-color: #edcc54a1;
-        margin-top: 25.5em;
+        top: 85%;
         transition: all 1.3s;
-        transform: translateX(277%);
+        right: -75%;
+        top: -500%;
+
+        /* transform: translateX(277%); */
         
     }
-    
+
     .navbar .menu-toggle {
         display: grid;
-        transform: translateX(76%);
+        top: 95%;
+        /* transform: translateX(76%); */
         border-radius: 8px 0px 0px 8px;
     }
     

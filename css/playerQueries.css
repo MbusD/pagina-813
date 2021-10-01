@@ -33,12 +33,8 @@
         top: 95%;
         /* transform: translateX(76%); */
         border-radius: 8px 0px 0px 8px;
-        z-index: 100;
     }
-    
-    .audio {
-        z-index: 0;
-    }
+
     
     /* Main Footer */
 

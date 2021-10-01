@@ -36,18 +36,18 @@
         z-index: 100;
     }
     
+    /* Main Footer */
+
+    .footer .listenOnline{
+        font-size: 8px;
+    }
+
+    .footer .followMe{
+        display: none;
+    }
+
+    .footer .socialNetwork{
+        margin-left: 3em;
+    }
 }
 
-/* Main Footer */
-
-.footer .listenOnline{
-    font-size: 8px;
-}
-
-.footer .followMe{
-    display: none;
-}
-
-.footer .socialNetwork{
-    margin-left: 3em;
-}
